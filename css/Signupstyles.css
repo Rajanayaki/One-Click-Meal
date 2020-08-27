@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('images/8.jpg');
+  background-size: cover;
+  max-width:100%;
+  height:auto;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+.navbar a{
+color:white !important;
+}
+.navbar a:hover{
+	color:black !important;
+}
+
+.navbar-custom{
+	background-color:#e94560;
+}
+.button{
+	color:white;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35rem;
+  height:35rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 0.625rem;
+  font-size:40px; 
+  font-family: 'Lora', serif;
+}
+
+.box h2 {
+  margin: 0 0 1.875rem;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.062rem;
+  margin-bottom: 1.875rem;
+  border: none;
+  border-bottom: 0.065rem solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+
+
+.box input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color:#e94560;
+  padding: 2.625rem 2.25rem; 
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1rem;
+}
+
+.btn {
+    text-shadow: 1px 1px 2px rgba(10,10,10,0.3);
+    height: 50px;
+    text-align: center;
+    width: 200px;
+	padding-left:20px;
+    cursor: pointer;
+	background-color:#e94560;
+	font-size:20px; 
+	font-family: 'Lora', serif;
+
+}
+.btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+}
+.btn-three::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+    transition: all 0.3s;
+}
+.btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(1.5,1.5);
+}
+.btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.3,1.3);
+}
+.btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+	z-index: 1;
+}
+
+@media (min-width: 768px) {
+ .navbar-header{
+	position:absolute;
+	left:70px;
+}
+.navbar-right{
+	position:absolute;
+	right:50px;
+}
+}
